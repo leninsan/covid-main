@@ -1,0 +1,255 @@
+html{
+    scroll-behavior:smooth;/*permite el scroll suabe al dar clic en un enlace de la pagina*/
+}
+
+
+html,
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+}
+
+
+header{
+
+    height: 100vh;
+    /* background-image: url('../img/2coronavirus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center; */
+
+    /* background-size: 5%;
+    background-repeat: no-repeat;
+    background-image: url('../img/logo.png'),
+    url('../img/logo.png'),
+    url('../img/logo.png'),
+    url('../img/logo.png'),
+    url('../img/logo.png'),
+    url('../img/logo.png'),
+    url('../img/logo.png');
+    background-position: 75% 0,
+    100%,
+    20px 50px,
+    50%,
+    0 90%; */
+   
+   
+    
+}
+
+.text-alfa{
+    color: #f50057;
+    font-family: 'Oswald',
+    sans-serif;
+}
+footer{
+    background-color: #f50057;
+    min-height: 100px;
+}
+.etiquetas{
+    color: #f50057;
+    font-family: 'Oswald',
+    sans-serif;
+    font-size:2rem;
+}
+
+.paisResultado{
+
+ color: #f50057;
+ font-family: 'Oswald',
+ sans-serif;
+ }
+
+.header-img{
+
+   /* background-image: url('../img/virus3.png');
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position:top lef; */
+   margin-top: 250px;
+   margin-left: -100px;
+   /* visibility:visible ; */
+   z-index: inherit 2;
+   overflow: hidden;
+   /* height: 100%;  */
+
+ animation: rotate 3s infinite;
+ animation-name: rotate;
+ animation-duration: 3s;
+ animation-timing-function: ease;
+ animation-delay: 0s;
+ animation-iteration-count: infinite;
+ animation-direction: normal;
+ animation-fill-mode: none;
+ animation-play-state: running;
+   
+   
+}
+
+@keyframes rotate {
+
+    0%, 100% {
+        transform: rotate(10deg);
+    }
+
+    50%{
+        transform: rotate(-10deg);
+    }
+}
+
+.titulo{
+  
+  font-family: 'Oswald', sans-serif;
+  font-size:4rem ;
+  line-height : 65px;
+  
+}
+
+.titulo .texto_valor{
+    color: #f50057;
+}
+.titulos {
+    color: #f50057;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    line-height: 65px;
+}
+.card{
+    /* border:5px solid black; */
+}
+.valor_card{
+
+    font-family: 'Oswald', sans-serif;
+    font-size:2.5rem;
+}
+
+.titulo.card {
+
+    font-family: 'Oswald', sans-serif;
+    /* font-size: 2.5rem; */
+}
+
+.icono{
+  font-size:2.5rem;
+  margin-left: -35px;
+  margin-top: -20px;
+  padding: 20px 22px;
+  border-radius: 50% ;
+  
+}
+
+@media (max-width: 736px) {
+
+
+    .titulo {
+        
+          margin-top: 30px;
+        margin-left: 40px;
+      
+        font-family: 'Oswald', sans-serif;
+        font-size: 1rem;
+        line-height: 50px; 
+        
+    }
+
+    .titulo .texto_valor {
+      color: #f50057;
+    }
+
+    
+}
+  @media (max-width: 768px) {
+      .titulo {
+          margin-top: 30px;
+          font-family: 'Oswald', sans-serif;
+          font-size: 2.5rem;
+          line-height: 50px;
+      }
+
+      .header-img {
+          margin-top: 180px;
+          margin-left: -170px;
+          /* visibility:visible ; */
+          z-index: inherit 2;
+          overflow: hidden;
+      }
+  }
+  
+   @media (max-width: 414px) {
+       .titulo {
+           margin-top: 30px;
+           font-family: 'Oswald', sans-serif;
+           font-size: 3.5rem;
+           line-height: 55px;
+       }
+
+        .header-img {
+            margin-top: 230px;
+            margin-left: -100px;
+            /* visibility:visible ; */
+            z-index: inherit 2;
+            overflow: hidden;
+        }
+   }
+
+   @media (max-width: 411px) {
+       .titulo {
+           margin-top: 30px;
+           font-family: 'Oswald', sans-serif;
+           font-size: 3rem;
+       }
+
+       .header-img {
+           margin-top: 215px;
+           margin-left: -90px;
+           /* visibility:visible ; */
+           z-index: inherit 2;
+           overflow: hidden;
+       }
+   }
+
+   @media (max-width: 375px) {
+       .titulo {
+           margin-top: 30px;
+           font-family: 'Oswald', sans-serif;
+           font-size: 2.5rem;
+           line-height: 50px;
+       }
+
+       .header-img {
+           margin-top: 210px;
+           margin-left: -90px;
+           /* visibility:visible ; */
+           z-index: inherit 2;
+           overflow: hidden;
+       }
+   }
+
+   @media (max-width: 320px) {
+
+     .titulo {
+         margin-top: 30px;
+         font-family: 'Oswald', sans-serif;
+         font-size: 2.5rem;
+     }
+
+     .header-img {
+         margin-top: 200px;
+         margin-left: -90px;
+         /* visibility:visible ; */
+         z-index: inherit 2;
+         overflow: hidden;
+     }
+
+   }
+
+  
+
+  
+ 
+
+  
+
+ 

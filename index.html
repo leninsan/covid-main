@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icono.png">
+     
+    <!-- PLUGINS  -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- ANIMATE JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESON -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        
+    <!-- DataTables -->
+    <link rel="stylesheet" href="css/plugins/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="css/plugins/responsive.bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Covid-19</title> 
+</head>
+
+<body>
+
+<div class="container-fluid px-0">
+
+   <!-- BARRA DE NAVEGACION -->
+   <div class="row mx-0 ">
+    
+       <nav class=" col-12 navbar navbar-expand-lg navbar-light bg-light fixed-top shadow ">
+
+            <a class="navbar-brand pl-3" href="#">
+                <img src="img/logo_largo.png" width="130" height="40" class="d-inline-block align-top" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link bg-transparent " href="#resumen_mundial">Resumen Mundial</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link btn btn-danger rounded-pill bg-danger text-white" href="#buscar">Buscar <i class="fas fa-search-plus ml-3"></i> </a>
+                    </li>
+
+                </ul>
+            </div>
+
+       </nav>
+   </div>
+     
+    <!-- PORTADA DE LA PAGINA -->
+   <header class="row mx-0  align-items-center   bg-dark  overflow-hidden ">
+
+       <!-- Datos colombia banner -->
+      <div class="col-12 col-lg-6  d-flex justify-content-center mt-5 mt-lg-0 " >
+         
+
+         <p class="text-uppercase  titulo text-white"> 
+            <span class="font-weight-lighter font-weight-bold ">colombia:</span><br>
+            <span class="text-capitalize ">confirmados:</span><span class="col_cantidad text_valor ml-2"> </span><br>
+            <span class="text-capitalize ">muertos:</span><span class="col_muertos text_valor ml-2"> </span><br>
+            <span class=" text-capitalize">recuperados:</span><span class="col_recuperados text_valor ml-2"> </span>          
+         </p> 
+        <div class=" position-absolute  header-img ">
+            <img class="img-fluid " src="img/virus3.png" alt="" width="50%" height="50%">
+        </div>
+
+      </div> 
+      
+        <!-- imagen banner-->
+      <div class="col-12 col-lg-6  d-flex justify-content-center ">
+          <img class="img-fluid" src="img/medicina.svg" alt="" width="80%" height="80%">
+      </div>
+         
+   </header>
+
+   
+   <div class="row mx-0  px-3 " id="resumen_mundial">
+
+        <div class="col-12 mt-5 ">
+            <h3 class="titulos text-uppercase text-center" >Situación actual en el mundo</h2>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mt-5 ">
+            <div class="card border-dark mb-3 dato-global " >
+                <div class="card-header text-right">
+                    <i class=" fa fa-calendar-alt text-muted"></i>
+                    <span class="text-muted ">
+                        Fecha: <span class="fecha_confirmed"></span>  
+                    </span> 
+                </div>
+                <div class="card-body text-danger text-center">
+                   <h5 class="card-title titulo.card">Número de Casos confirmados con Coronavirus el mundo</h5>
+                   <p class="card-text valor_card total_confirmed_world font-weight-bold text-secondary"></p>
+                   <i class=" fa fa-globe-americas position-absolute icono  "></i>
+                </div>
+            </div>
+
+        </div>
+
+         <div class="col-12 col-md-6 col-lg-3 col mt-5">
+             <div class="card border-dark mb-3 dato-global">
+                 <div class="card-header text-right">
+                    <i class=" fa fa-calendar-alt text-muted"></i>
+                    <span class="text-muted ">
+                        Fecha: <span class="fecha_deaths"></span>  
+                    </span> 
+                 </div>
+                 <div class="card-body text-danger text-center">
+                    <h5 class="card-title titulo.card">Número de muertes por coronavirus confirmadas en el mundo</h5>
+                    <p class="card-text total_deaths_world valor_card font-weight-bold text-secondary"></p>
+                    <i class=" fa fa-skull position-absolute icono  "></i>
+                 </div>
+             </div>
+
+         </div>
+
+         <div class="col-12 col-md-6 col-lg-3 mt-5 ">
+             <div class="card border-dark mb-3 dato-global">
+                <div class="card-header text-right">
+                    <i class=" fa fa-calendar-alt text-muted"></i>
+                    <span class="text-muted ">
+                        Fecha: <span class="fecha_pais"></span>  
+                    </span> 
+                </div>
+                <div class="card-body text-danger text-center">
+                    <h5 class="card-title titulo.card">Total de países Infectados por coronavirus en el mundo</h5>
+                    <p class="card-text valor_card total_paises_infectados font-weight-bold text-secondary"></p>
+                    <i class=" fa fa-flag position-absolute icono  "></i>
+                </div>
+             </div>
+
+         </div>
+
+        <div class="col-12 col-md-6 col-lg-3 mt-5 ">
+            <div class="card border-dark mb-3 dato-global">
+                <div class="card-header text-right">
+                    <i class=" fa fa-calendar-alt text-muted"></i>
+                    <span class="text-muted ">
+                        Fecha: <span class="fecha_recovered"></span>
+                    </span>
+                </div>
+                <div class="card-body text-danger text-center">
+                    <h5 class="card-title titulo.card">Número total de recuperados por coronavirus en el mundo</h5>
+                    <p class="card-text valor_card total_recuperados_world font-weight-bold text-secondary"></p>
+                    <i class=" fa fa-ambulance position-absolute icono  "></i>
+                </div>
+            </div>
+        
+        </div>
+
+   </div>
+
+   <div class="row mx-0 mt-3 px-3 mb-n1" id="buscar">
+
+        <div class="col-12 mt-5 " id="consultar">
+            <h3 class="titulos text-uppercase text-center">Consultar datos por país</h2>
+        </div>
+
+        <div class="col-12 mt-3 ">
+        
+            <form>
+                <div class="form-row mb-3">
+
+                    <div class="col-12  text-uppercase">
+                        <label for="" class="col font-weight-bold etiquetas">lista de Paises:</label>
+                        <select class="form-control form-control-lg paises" id="paises">
+                            
+                        </select>
+                    </div>
+
+                    <!-- <div class="col-12 col-md-4 text-uppercase">       
+                    <label for="" class="col-sm-2 font-weight-bold etiquetas">Casos:</label>
+                    <select class="form-control form-control-lg estado">   
+                        <option value=""> Tipo de caso </option> 
+                        <option value="confirmed"> Confirmados </option>
+                        <option value="deaths"> De Muerte </option>
+                        <option value="recovered"> Recuperados </option>
+                    </select>
+                    </div>
+
+                    <div class="col-12 col-md-4 ">
+                        <label for="" class="col-sm-2 font-weight-bold etiquetas text-white">.</label>
+                        <button class="btn btn-danger btn-lg btn-block" type="button" id="consultar">Consultar <i class="fas fa-search-plus ml-3"></i> </button>
+                    </div> -->
+
+                </div>
+            </form>
+          
+
+        </div>
+   
+   </div>
+   
+   <!-- RESULTADOS INDIVIDUALES -->
+    <div class="row mx-0  px-3 mb-5 " >
+
+      <div class=" mb-lg-3 col-12 ">
+         <p class="h3 text-uppercase font-weight-bold text-center">Resultados <span class="paisResultado"></span></p>
+      </div> 
+
+      <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
+            <div class="card border-dark mb-3 dato-global ">
+
+                <div class="card-header d-flex justify-content-between">
+                    <span class="text-alfa text-uppercase font-weight-bold">Confirmados</span>
+                    <span class="text-muted text-right">
+                        <i class=" fa fa-calendar-alt text-muted "></i>
+                        Fecha: <span class="confirmatedDate"></span>
+                    </span>
+                </div>
+
+                <div class="card-body text-danger text-center">
+                    <p class="card-text valor_card confirmedCountry font-weight-bold text-secondary">?</p>
+                    <i class=" fa fa-check-circle position-absolute icono  "></i>
+                </div>
+
+            </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
+            <div class="card border-dark mb-3 dato-global">
+
+                <div class="card-header d-flex justify-content-between">
+                    <span class="text-alfa text-uppercase font-weight-bold">Muertes</span>
+                    <span class="text-muted text-right">
+                        <i class=" fa fa-calendar-alt text-muted "></i>
+                        Fecha: <span class="deathsDate"></span>
+                    </span>
+                </div>
+
+                <div class="card-body text-danger text-center">
+                    <p class="card-text valor_card deathsCountry font-weight-bold text-secondary">?</p>
+                    <i class=" fa fa-skull position-absolute icono  "></i>
+                </div>
+
+            </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
+            <div class="card border-dark mb-3 dato-global">
+
+               <div class="card-header d-flex justify-content-between">
+                   <span class="text-alfa text-uppercase font-weight-bold">Recuperados</span>
+                   <span class="text-muted text-right">
+                       <i class=" fa fa-calendar-alt text-muted "></i>
+                       Fecha: <span class="recoveredDate"></span>
+                   </span>
+               </div>
+
+               <div class="card-body text-danger text-center">
+                   <p class="card-text valor_card recoveredCountry font-weight-bold text-secondary">?</p>
+                   <i class=" fa fa-ambulance position-absolute icono  "></i>
+               </div>
+
+            </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
+          <div class="card border-dark mb-3 dato-global">
+
+              <div class="card-header d-flex justify-content-between">
+                  <span class="text-alfa text-uppercase font-weight-bold">Nuevos casos</span>
+                  <span class="text-muted text-right">
+                      <i class=" fa fa-calendar-alt text-muted "></i>
+                      Fecha: <span class="newDate"></span>
+                  </span>
+              </div>
+
+              <div class="card-body text-danger text-center">
+                  <p class="card-text valor_card newConfirmed font-weight-bold text-secondary">?</p>
+                  <i class=" fa fa-plus-circle position-absolute icono  "></i>
+              </div>
+
+          </div>
+
+      </div>
+
+    </div>
+
+
+
+   <footer class="row mx-0 d-flex " >
+     <div class="col-12 text-center align-self-center"><span class="text-uppercase text-white font-weight-bold ">&copy;made by xisart </span></div>
+   </footer>
+
+
+
+
+
+
+</div>
+
+
+    <!-- <h1>Hello, world!</h1> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+     <!-- sweetAlert -->
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- DataTables 	https://datatables.net/-->
+    <script src="js/plugins/jquery.dataTables.min.js"></script>
+    <script src="js/plugins/dataTables.bootstrap4.min.js"></script>
+    <script src="js/plugins/dataTables.responsive.min.js"></script>
+    <script src="js/plugins/responsive.bootstrap.min.js"></script>
+
+
+    <script src="js/app.js "> </script>
+        
+</body>
+
+</html>
